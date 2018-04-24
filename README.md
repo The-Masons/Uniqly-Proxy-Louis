@@ -1,2 +1,2 @@
-# Uniqly-Proxy-Louis
-Proxy server for Uniqly components
+# Uniqly-Reviews
+Uniqly component that serves product reviews
