@@ -661,6 +661,7 @@ hr{
   padding: 8px;
   border: solid 3px;
   font-size: 14px;
+  width:300px;
 }
 
 .review-title {
