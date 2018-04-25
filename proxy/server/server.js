@@ -13,8 +13,8 @@ app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`);
 });
 
-app.get('/:product_id', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../client/dist/index.html'));
+app.get('/product/:product_id', (req, res) => {
+  res.sendFile('index.html', { root: path.join(__dirname, '../public') });
 });
 
 app.get('/reviews/:product_id', (req, res) => {
