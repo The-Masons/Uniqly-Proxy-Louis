@@ -17,18 +17,5 @@ app.get('/product/:product_id', (req, res) => {
   res.sendFile('index.html', { root: path.join(__dirname, '../public') });
 });
 
-app.get('/reviews/:product_id', (req, res) => {
-  Reviews.find({
-    product_id: parseInt(req.params.product_id)
-  }, (err, results) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(results);
-      res.send(results);
-    }
-  });
-});
-
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.json());
