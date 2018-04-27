@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 
 app.listen(port, () => {
-  console.log(`server running at: http://localhost:${port}`);
+  console.log(`server running at: ${port}`);
 });
 
 app.get('/product/:product_id', (req, res) => {
