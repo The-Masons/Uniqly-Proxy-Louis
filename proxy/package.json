@@ -7,10 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./server/server.js",
-    "generate": "node database/generate.js",
-    "db-setup": "node database/seed.js",
-    "app-dev": "webpack -d --watch",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "docker": "node ./server/server.js"
   },
   "jest": {
     "setupFiles": [
