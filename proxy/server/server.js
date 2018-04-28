@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 app.get('/product/:product_id', (req,res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.status(302);
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
